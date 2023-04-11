@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+:root {
+    --color-1: hsl(157, 74%, 62%);
+    --color-2: #2b334a;
+    --color-3: #121726;
+    --color-4: #ffffff;
+    --color-5: #55678b;
+    --color-6: #c2cbe5;
+    --color: #121a26;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 375px;
+    max-width: 1440px;
+    font-family: 'Chivo', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    height: 700px;
+    background-color: #121725;
+    background-image: linear-gradient(hsla(283, 78%, 2%, 0.8),
+            hsla(278, 67%, 2%, 0.8)), url(./assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 62px 24px;
+}
+
+.logo {
+    margin-bottom: 50px;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: var(--color-1);
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 16px;
+}
+
+span {
+    color: var(--color-4);
+}
+
+.description-p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--color-6);
+    margin-bottom: 33px;
+}
+
+.redes-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.redes-container img {
+    width: 70px;
+}
+
+.email-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-email-mobile {
+    height: 46px;
+    border-style: none;
+    background-color: #2C344B;
+    color: var(--color-6);
+    border-radius: 28px;
+    margin-bottom: 16px;
+    padding: 9px 32px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.btn-mobile {
+    height: 46px;
+    border-radius: 28px;
+    border-style: none;
+    background: #54E6AF;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+    color: #121725;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.btn-mobile:hover {
+    background-color: var(--color-6);
+    cursor: pointer;
+}
+
+.email-wrong {
+    margin-top: 15px;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.tablet-img {
+    display: none;
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .container {
+        width: 100%;
+        height: 1024px;
+        background-color: #121725;
+        background-image: url(./assets/mobile/image-host.jpg);
+        background-position: 100% 0%;
+        text-align: left;
+        padding: 60px 39px;
+    }
+
+    .logo {
+        margin-bottom: 120px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .email-mobile {
+        display: none;
+    }
+
+    .email-desktop {
+        width: 427px;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 65px;
+        border-radius: 28px;
+        background-color: #2C344B;
+        position: relative;
+    }
+
+    .input-email-desktop {
+        width: 80%;
+        height: 40px;
+        padding-left: 20px;
+        background-color: #2C344B;
+        color: var(--color-6);
+        background-color: #2C344B;
+        border-radius: 28px;
+        border-style: none;
+        cursor: pointer;
+    }
+
+    .btn-desktop {
+        width: 162px;
+        margin-right: 5px;
+        height: 46px;
+        border-radius: 28px;
+        border-style: none;
+        background: #54E6AF;
+        box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+        color: #121725;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 28px;
+    }
+
+    .btn-desktop:hover {
+        background-color: var(--color-6);
+        cursor: pointer;
+    }
+
+    .email-wrong {
+        position: absolute;
+        bottom: 40px;
+        left: 65px;
+    }
+
+    .description {
+        background-color: #2C344B;
+        width: 480px;
+        height: 447px;
+        background-color: #121725;
+        padding-top: 53px;
+    }
+
+    .description h1 {
+        font-size: 38px;
+        line-height: 56px;
+    }
+
+    .description-p {
+        width: 78%;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 100%;
+        height: 900px;
+        background-color: #121725;
+        background-image: url(./assets/desktop/image-host.jpg);
+        background-position: right;
+        text-align: left;
+        padding: 100px 165px;
+    }
+
+    .description {
+        background-color: #2C344B;
+        width: 723px;
+        height: 447px;
+        background-color: #121725;
+        padding-top: 53px;
+    }
+
+    .description h1 {
+        font-size: 50px;
+        line-height: 56px;
+    }
+
+    .description-p {
+        width: 78%;
+        font-size: 23px;
+    }
+
+    .email-desktop {
+        width: 550px;
+    }
+
+
+    .email-wrong {
+        position: absolute;
+        bottom: 0px;
+        left: 205px;
+    }
+
+    .redes-container {
+        width: 80%;
+    }
+
+    .redes-container img {
+        width: 90px;
+    }
+
+}
